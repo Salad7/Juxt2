@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00CDCD"
+    tools:context="com.example.login.LoginActivity">
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/testlogo"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <Button android:id="@+id/btnregister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Not a memeber? Sign up now."
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+
+    <Button android:id="@+id/btnlogin"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:layout_gravity="center"
+        android:text="Sign in"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/btnregister"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:background="@android:color/black"
+        android:alpha="0.6"
+        android:textColor="#ffffff"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/btnlogin"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username" />
+
+    <EditText android:id="@+id/username"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:alpha="0.6"
+        android:textColor="#ffffff"
+        android:hint="username"
+        android:inputType="text"
+        android:padding="10dp" android:singleLine="true"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+</RelativeLayout>
